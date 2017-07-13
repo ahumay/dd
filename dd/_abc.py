@@ -1,4 +1,4 @@
-"""Interface specification as abstract base classes.
+"""Interface specification.
 
 This specification is implemented by the modules:
 
@@ -266,7 +266,7 @@ class Operator(object):
     def implies(self, other):
         pass
 
-    # usure about this
+    # unsure about this
     def equiv(self, other):
         pass
 
