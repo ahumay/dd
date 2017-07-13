@@ -230,7 +230,7 @@ class Operator(object):
         pass
 
     def __str__(self):
-        pass
+        return '@' + str(int(self))
 
     def __len__(self):
         """Number of nodes reachable from this node."""
