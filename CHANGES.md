@@ -6,6 +6,8 @@
 API:
 
 - add module `dd._abc` that defines API implemented by other modules.
+- change BDD node reference syntax to "@ INTEGER"
+- change `Function.__str__` to include `@` in modules `cudd` and `autoref`
 - class `BDD` in modules `autoref`, `bdd`, `cudd`, `sylvan`:
   - methods `pick`, `pick_iter`:
     rename argument from `care_bits` to `care_vars`
