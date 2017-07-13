@@ -1,6 +1,32 @@
 # dd changelog
 
 
+## 0.5.2
+
+API:
+
+- add module `dd._abc` that defines API implemented by other modules.
+- class `BDD` in modules `autoref`, `bdd`, `cudd`, `sylvan`:
+  - methods `pick`, `pick_iter`:
+    rename argument from `care_bits` to `care_vars`
+- class `BDD` in modules `autoref`, `bdd`:
+  - method `count`:
+    rename argument from `n` to `nvars`
+- class `BDD` in modules `bdd`, `cudd`:
+  - allow swapping variables in method `rename`,
+    accept only variable names, not levels
+- rm argument `bdd` from functions:
+  - `image`, `preimage` in module `autoref`
+  - `and_exists`, `or_forall`, `dump` in module `cudd`
+  - `and_exists`, `or_forall` in module `sylvan`
+- rm argument `source` from function:
+  `copy_bdd` in modules `autoref`, `bdd`
+- rm function `cudd.rename`, use method `cudd.BDD.let`
+- rm function `autoref.rename`, use method `autoref.BDD.let`
+- add TLA constants "TRUE" and "FALSE" to syntax,
+  use these in method `BDD.to_expr`
+
+
 ## 0.5.1
 
 API:
