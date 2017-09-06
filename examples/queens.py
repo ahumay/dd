@@ -141,3 +141,5 @@ if __name__ == '__main__':
         times[n] = t
     f = open(fname, 'w')
     pickle.dump(times, f)
+
+    
